@@ -1,0 +1,10 @@
+services:
+  api:
+    image: alpine:3.20
+    container_name: api
+    command: sh -c "while true; do echo '[api] funcionant'; sleep 5; done"
+
+  worker:
+    image: alpine:3.20
+    container_name: worker
+    command: sh -c "while true; do echo '[worker] processant feina'; sleep 7; done"

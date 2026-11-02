@@ -1,0 +1,4 @@
+{
+  "servei-api": { "host": "local", "container": "api" },
+  "servei-worker": { "host": "local", "container": "worker" }
+}

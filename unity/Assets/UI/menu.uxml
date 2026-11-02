@@ -1,0 +1,27 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="root" style="flex-grow: 1; flex-direction: column; background-color: rgb(40, 44, 52); padding: 16px;">
+        <ui:Label text="Client Unity" style="font-size: 24px; color: rgb(255, 255, 255); margin-bottom: 12px;" />
+        <ui:VisualElement name="serveis" style="flex-direction: column; margin-bottom: 12px;">
+            <ui:VisualElement name="apiRow" style="flex-direction: row; align-items: center; background-color: rgb(60, 64, 72); padding: 8px; margin-bottom: 8px;">
+                <ui:Label text="servei-api" style="width: 140px; color: rgb(255, 255, 255);" />
+                <ui:Label name="apiState" text="desconegut" style="width: 120px; color: rgb(180, 180, 180);" />
+                <ui:Button name="apiStart" text="Iniciar" style="margin-right: 4px;" />
+                <ui:Button name="apiStop" text="Parar" style="margin-right: 4px;" />
+                <ui:Button name="apiRestart" text="Reiniciar" style="margin-right: 4px;" />
+                <ui:Button name="apiStatus" text="Estat" style="margin-right: 4px;" />
+                <ui:Button name="apiLogs" text="Logs" />
+            </ui:VisualElement>
+            <ui:VisualElement name="workerRow" style="flex-direction: row; align-items: center; background-color: rgb(60, 64, 72); padding: 8px; margin-bottom: 8px;">
+                <ui:Label text="servei-worker" style="width: 140px; color: rgb(255, 255, 255);" />
+                <ui:Label name="workerState" text="desconegut" style="width: 120px; color: rgb(180, 180, 180);" />
+                <ui:Button name="workerStart" text="Iniciar" style="margin-right: 4px;" />
+                <ui:Button name="workerStop" text="Parar" style="margin-right: 4px;" />
+                <ui:Button name="workerRestart" text="Reiniciar" style="margin-right: 4px;" />
+                <ui:Button name="workerStatus" text="Estat" style="margin-right: 4px;" />
+                <ui:Button name="workerLogs" text="Logs" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:Label name="logsTitle" text="Logs" style="font-size: 18px; color: rgb(255, 255, 255); margin-bottom: 4px;" />
+        <ui:ScrollView name="logsPanel" style="flex-grow: 1; background-color: rgb(25, 28, 33); padding: 8px;" />
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,17 @@
+{
+  "name": "node_docker_ssh",
+  "version": "1.0.0",
+  "description": "",
+  "main": "servidor.js",
+  "scripts": {
+    "start": "node --env-file=.env servidor.js",
+    "client": "node client.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "ws": "^8.22.0"
+  }
+}
